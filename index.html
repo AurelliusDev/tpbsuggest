@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sugestões TPB</title>
+	<link rel="icon" type="image/x-icon" href="Imagens/TPB.ico">
+	 <style>
+        /* Estilo para esconder o conteúdo inicialmente */
+        .conteudo {
+            display: none;
+        }
+
+            hr {
+            width: 100%;
+        }
+
+.centro {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    </style>
+
+</head>
+
+<body>
+	<br><br>
+	<img src="Imagens/Teleperformance.png" width="300" height="65" align="right"><br><br>
+	<hr>	 
+	<img src="Imagens/Tpbook.png" width="200" height="80" class="centro"><br>
+	<button onclick="expandirTodos()">Expandir Todos</button> <button onclick="recolherTodos()">Recolher Todos</button><br><br><br><br>
+	<ul>
+        <!-- Assunto 1 -->
+        <li>
+            <strong>Atualização Cadastral</strong>
+            <!-- Botão para expandir/collapse -->
+            <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
+            <!-- Conteúdo -->
+            <div class="conteudo"><br><br>
+            	<strong>Informação Atual</strong><br><br>
+                <img src="Imagens/ATCadastral1.png" width="800" height="200"><br><br>
+                <h3><u>Sugestão:</u></h3><br>
+                <em>• Adicionar o prazo para refletir a atualização no <strong>Salesforce</strong></em><br><br>
+            </div>
+        </li>
+        <br>
+
+        <!-- Assunto 2 -->
+        <li>
+            <strong>Aplicativo Credcesta - APP</strong>
+            <!-- Botão para expandir/collapse -->
+            <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
+            <!-- Conteúdo -->
+            <div class="conteudo"><br><br>
+                <strong>Informação Atual</strong><br><br>
+                <img src="Imagens/APP1.png" width="800" height="200"><br><br>
+                <h3><u>Sugestão:</u></h3><br>
+                <em>• Adicionar a versão <strong>IOS</strong> (3.25.5), pois a versão que consta atualmente é apenas versão do sistema operacional Android.<br><br>
+                	• Adicionar processo para limpeza de cache<br><br>
+                		►<strong><u>Android</u></strong>◄<br><br>
+                		<strong>Configuração</strong> > <strong>gerenciar App</strong> > clicar no <strong>App Credcesta</strong> > opção <strong>limpar cache</strong> ou <strong>limpar todos os dados</strong>. <br><br>
+                		►<strong><u>IOS</u></strong>◄<br><br>
+                		<strong>GERAL</strong> > <strong>ARMAZENAMENTO DO IPHONE</strong> > Clicar no <strong>APP Credcesta</strong> > opções: <strong>DESINSTALAR</strong> ( opção de desinstalar ficará os documentos salvos) e <strong>APAGAR APP</strong> (irá apagar todos os dados e não ficará nada salvo).
+
+                		 <br><br></em>
+                		 <hr>
+                		 <h3>Cartão virtual</h3><br><br>
+                		 <img src="Imagens/Cardvirt.png" width="800" height="250"><br>
+                		 <h3><u>Sugestão:</u></h3><br>
+                		 • <em>Incluir o cenário onde o cliente não consegue gerar cartão virtual mesmo estando com conta e cartão ativo.</em><br><br>
+            </div>
+        </li>
+        <br>
+
+        <!-- Assunto 3 -->
+        <li>
+            <strong>Boleto Amortização ou Liquidação de Saque</strong>
+            <!-- Botão para expandir/collapse -->
+            <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
+            <!-- Conteúdo -->
+            <div class="conteudo"><br><br>
+                <strong>Informação Atual</strong><br><br>
+                ►<strong><u>Liquidação</u></strong>◄<br>
+                <img src="Imagens/liquidasales.png" width="850" height="500"><br><br>
+                <h3><u>Sugestão:</u></h3><br>
+                <em>• Incluir orientação de quando utilizar o primeiro cenário de registro direcionado para o Grupo/Área Retenção, levando em consideração que a orientação do processo é para a realização da transferência caso o cliente solicite o boleto, ou retorne a ligação em horário de funcionamento do setor.</em><br><br>
+            </div>
+        </li>
+        <br>
+
+        <!-- Assunto 4 -->
+        <li>
+            <strong>Escritórios de Cobrança</strong>
+            <!-- Botão para expandir/collapse -->
+            <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
+            <!-- Conteúdo -->
+            <div class="conteudo"><br><br>
+                <strong>Informação Atual</strong><br><br>
+        		<img src="Imagens/Escritorio.png" width="700" height="200"><br><br>
+        		<h3><u>Sugestão:</u></h3><br>
+        		<em>Adicionar os outros escritórios parceiros, pois temos alguns clientes que constam escritórios diferentes em consulta ao sistema função.</em><br><br>
+        		• <!-- ADICIONAR OS OUTROS ESCRITÓRIOS DE COBRANÇA QUE CONSTAM EM FUNÇÃO -->
+        		<br><br>
+        		<strong>OBS: Adicionar também ao processo "Pagamento de valores em atraso", pois no item '3' também consta essa mesma tabela.</strong>
+
+            </div>
+        </li>
+		<br>
+
+        <!-- Assunto 5 -->
+        <li>
+            <strong>Cancelamento de Seguro Prestamista</strong>
+            <!-- Botão para expandir/collapse -->
+            <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
+            <!-- Conteúdo -->
+            <div class="conteudo"><br><br>
+               <strong>Informação Atual</strong><br><br>
+        		<img src="Imagens/Seguro.png" width="700" height="200"><br><br>
+        		<h3><u>Sugestão:</u></h3><br>
+        		<em> • Incluir orientação sobre a utilização do registro acima, pois no processo atual a orientação é que o processo de cancelamento seja seguido caso o cliente não aceite ser transferido ou esteja muito descontente e insatisfeito.
+        			<p>Os registros TP FCR estão apenas voltados ao Hi Plataform</p></em>
+            </div>
+        </li>
+        <br>
+
+        <!-- Assunto 6 -->
+        <li>
+            <strong>Propostas SIAPE Credcesta</strong>
+            <!-- Botão para expandir/collapse -->
+            <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
+            <!-- Conteúdo -->
+            <div class="conteudo"><br><br>
+            	<strong>Informação Atual</strong><br><br>
+            	►<strong>Proposta SIAPE Credcesta - Status: Aguardando Liberação Fluxo Teimosinha</strong>◄<br>
+            	<img src="Imagens/Siape1.png" width="700" height="200"><br><br>
+            	Clicando no link sugerido "<a href="https://tpbsconhecimento.beedoo.io/wiki/367327/gerar-autorizacao-siape">Gerar Autorização - SIAPE</a>", somos direcionados à página com o passo a passo para a <b>autorização de consignatário</b>.<br><br>
+            	<h3><u>Sugestão:</u></h3><br>
+            	Devido ao fluxo de ligações de clientes que solicitam o <b>cancelamento</b> dessa autorização, vemos que não há no tpbook procedimento para esse processo, porém nas imagens do passo a passo para a autorização, vemos que existe a opção de cancelamento pelo próprio aplicativo <strong>sougov.br</strong>.<br>
+            	<img src="Imagens/Siape2.png" width="400" height="600"><br><br><br>
+            	Também consta procedimento passo a passo no site <strong>gov.br</strong><br><br>
+            	<img src="Imagens/Siape3.png" width="400" height="600"><br>
+            	<img src="Imagens/Siape4.png" width="800" height="600"><br>
+            	<img src="Imagens/Siape5.png" width="400" height="600"><br>
+            	<img src="Imagens/Siape6.png" width="900" height="600"><br><br>
+            	<a href="https://www.gov.br/servidor/pt-br/acesso-a-informacao/faq/sou-gov.br/consignacoes/6-como-cancelo-a-autorizacao-gerada-para-o-consignatario"> Portal do Servidor - Cancelar a autorização de Empréstimo Consignado</a><br><br>
+
+
+
+            </div>
+        </li>
+        <br>
+
+        <!-- Assunto 7 -->
+        <li>
+            <strong>Problemas no uso do cartão</strong>
+            <!-- Botão para expandir/collapse -->
+            <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
+            <!-- Conteúdo -->
+            <div class="conteudo"><br><br>
+                <strong>Informação Atual</strong><br><br>
+                •Tabelas de códigos/Descrição Motivo em formato de imagem<br><br>
+
+                <h3><u>Sugestão:</u></h3><br>
+                <em>• Inserir as tabelas em texto, permitindo a pesquisa pelos atalhos "Ctrl+F ou F3", facilitando a busca afim de otimizar os atendimentos.
+                <p>• Inserir complemento na informação sobre o campo <strong>Autoriz Pendente</strong>, pois consta apenas a informação que a transação está em aprovação pela Bandeira do cartão e que o prazo é de até 10 dias, mas não informa se são úteis ou corridos.</p></em>
+            </div>
+        </li>
+        <br>
+
+        <!-- Assunto 8 -->
+        <li>
+            <strong>Representante Legal</strong>
+            <!-- Botão para expandir/collapse -->
+            <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
+            <!-- Conteúdo -->
+            <div class="conteudo"><br><br>
+              <h3><u>Sugestão:</u></h3><br>
+              <em>• Inserir orientação de como realizar o registro do Representante Legal.</em>
+            </div>
+        </li>
+   
+        <br>
+
+        <!-- Assunto 9 -->
+        <li>
+            <strong>Outros Questionamentos e Sugestões</strong>
+            <!-- Botão para expandir/collapse -->
+            <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
+            <!-- Conteúdo -->
+            <div class="conteudo"><br><br>
+                • Por que fazemos o cancelamento do cartão quando cliente entra em contato fora de horário de funcionamento do Retenção, mas não podemos enviar o boleto de liquidação, visto que o cenário de cancelamento é consideravelmente mais grave que o envio do boleto? O questionamento também serve para os casos de cancelamento de seguro onde o tpbook orienta seguir com o procedimento.<br><br>
+                • Incluir lista de Ramais de outros setores. Atualmente, o tpbook informa apenas ramal para Retenção, Vendas e Security, porém, por mais que não seja permitida a transferência, seria interessante ter a informação, pois o contato interno com outros setores pode facilitar alguns processos.<br><br>
+                •No processo <strong>"Cancelamento de conta - Por Duplicidade"</strong>, consta a informação de que a conta está duplicada quando o cliente possui mais de uma conta no mesmo convênio. Esse cenário permanece se o cliente possui matrículas diferentes?<br><br>
+                • No processo <strong>"Contrato Migrado"</strong> consta no item 4 a informação de que o expert pode solicitar o boleto para liquidação. O Cenário de transferência para o <strong>Retenção</strong> não se aplica nesses casos?<br><br>
+                • No processo <strong>"Escritórios de Cobrança"</strong> consta a seguinte informação:<br><br>
+                <img src="Imagens/Escritorio2.png" width="600" height="50"><br><br>
+                Essa informação também pode ser aplicada no processo "Boleto Amortização ou Liquidação de Saque"?<br><br>
+                • No processo "Gravação de ligação" possui um script sugerido onde informa que por não ser do SAC, não há obrigação legal para o envio da gravação, porém logo em seguida tem uma orientação para questionamento e uma tabulação em aberto para pedido de gravação.<br>
+                <img src="Imagens/Grav1.png" width="500"><br>
+                <img src="Imagens/Grav2.png" width="600"><br>
+                Nesse caso, qual o real direcionamento?<br><br>
+                • No Processo <strong>"Problemas no uso do cartão"</strong> temos o cenário do motivo <b>"Negada CPQD"</b>. A informação que consta em Tpbook faz referência ao uso do cartão em redes de supermercado que não são da rede <b>Cesta do Povo e/ou credenciadas</b>, porém, já foi sinalizado em operação que esse motivo pode ser sinalizado em casos onde o cliente utiliza o cartão em máquinas registradas em CPF ao invés do registro em CNPJ, essa informação procede? Existem outros motivos para essa negativa <b>CPQD</b>? 
+
+            </div>
+        </li>
+        
+    </ul>
+    <br><br><br>
+    <button onclick="expandirTodos()">Expandir Todos</button> <button onclick="recolherTodos()">Recolher Todos</button>
+
+    <script>
+        function toggleConteudo(botao) {
+            // Encontre o elemento irmão .conteudo
+            var conteudo = botao.nextElementSibling;
+
+            // Alterne a visibilidade do conteúdo
+            if (conteudo.style.display === "none" || conteudo.style.display === "") {
+                conteudo.style.display = "block";
+                botao.textContent = "Recolher";
+            } else {
+                conteudo.style.display = "none";
+                botao.textContent = "Expandir";
+            }
+        }
+
+         function expandirTodos() {
+            var conteudos = document.querySelectorAll('.conteudo');
+
+            // Iterar sobre todos os elementos .conteudo e mostrá-los
+            conteudos.forEach(function (conteudo) {
+                conteudo.style.display = "block";
+            });
+
+            // Atualizar os botões para "Recolher"
+            var botoes = document.querySelectorAll('.expandir');
+            botoes.forEach(function (botao) {
+                botao.textContent = "Recolher";
+            });
+        }
+
+        function recolherTodos() {
+            var botoes = document.querySelectorAll('.expandir');
+            botoes.forEach(function(botao) {
+                var conteudo = botao.nextElementSibling;
+                conteudo.style.display = "none";
+                botao.textContent = "Expandir";
+            });
+        }
+    </script>
+
+</body>
+
+</html>
