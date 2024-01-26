@@ -21,6 +21,50 @@
         margin: auto;
         text-align: center;
     }
+
+      .botao-expandir, .botao-recolher {
+        /* Estilo padrão para ambos os botões */
+        padding: 3px 8px;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        margin-right: 5px;
+        border-radius: 5px;
+    }
+
+    .botao-expandir {
+        /* Estilo específico para o botão Expandir Todos */
+        background-color: #191970; /* Azul */
+    }
+
+    .botao-recolher {
+        /* Estilo específico para o botão Recolher Todos */
+        background-color: #8b4513; /* Verde??? */
+    }
+
+    .expandir {
+
+        background-color: #000000; /* marrom???? */
+         padding: 3px 8px;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        margin-right: 5px;
+        border-radius: 20px;
+    }
+
+    .topic {
+         background-color: #b0c4de; /* azul???? */
+         padding:5px 20px;
+        cursor: none;
+        border: 1;
+        color: #000000;
+        font-size: 19px;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
     </style>
 
 </head>
@@ -30,11 +74,11 @@
 	<img src="Imagens/Teleperformance.png" width="300" height="65" align="right"><br><br>
 	<hr>	 
 	<img src="Imagens/TPBook.png" width="200" height="80" class="centro"><br>
-	<button onclick="expandirTodos()">Expandir Todos</button> <button onclick="recolherTodos()">Recolher Todos</button><br><br><br><br>
+	<button class="botao-expandir" onclick="expandirTodos()">Expandir Todos</button> <button class="botao-recolher" onclick="recolherTodos()">Recolher Todos</button><br><br><br><br>
 	<ul>
         <!-- Assunto 1 -->
         <li>
-            <strong>Atualização Cadastral</strong>
+            <strong class="topic">Atualização Cadastral</strong>
             <!-- Botão para expandir/collapse -->
             <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
             <!-- Conteúdo -->
@@ -49,7 +93,7 @@
 
         <!-- Assunto 2 -->
         <li>
-            <strong>Aplicativo Credcesta - APP</strong>
+            <strong class="topic">Aplicativo Credcesta - APP</strong>
             <!-- Botão para expandir/collapse -->
             <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
             <!-- Conteúdo -->
@@ -76,7 +120,7 @@
 
         <!-- Assunto 3 -->
         <li>
-            <strong>Boleto Amortização ou Liquidação de Saque</strong>
+            <strong class="topic">Boleto Amortização ou Liquidação de Saque</strong>
             <!-- Botão para expandir/collapse -->
             <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
             <!-- Conteúdo -->
@@ -92,7 +136,7 @@
 
         <!-- Assunto 4 -->
         <li>
-            <strong>Escritórios de Cobrança</strong>
+            <strong class="topic">Escritórios de Cobrança</strong>
             <!-- Botão para expandir/collapse -->
             <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
             <!-- Conteúdo -->
@@ -111,7 +155,7 @@
 
         <!-- Assunto 5 -->
         <li>
-            <strong>Cancelamento de Seguro Prestamista</strong>
+            <strong class="topic">Cancelamento de Seguro Prestamista</strong>
             <!-- Botão para expandir/collapse -->
             <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
             <!-- Conteúdo -->
@@ -127,7 +171,7 @@
 
         <!-- Assunto 6 -->
         <li>
-            <strong>Propostas SIAPE Credcesta</strong>
+            <strong class="topic">Propostas SIAPE Credcesta</strong>
             <!-- Botão para expandir/collapse -->
             <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
             <!-- Conteúdo -->
@@ -154,7 +198,7 @@
 
         <!-- Assunto 7 -->
         <li>
-            <strong>Problemas no uso do cartão</strong>
+            <strong class="topic">Problemas no uso do cartão</strong>
             <!-- Botão para expandir/collapse -->
             <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
             <!-- Conteúdo -->
@@ -171,7 +215,7 @@
 
         <!-- Assunto 8 -->
         <li>
-            <strong>Representante Legal</strong>
+            <strong class="topic">Representante Legal</strong>
             <!-- Botão para expandir/collapse -->
             <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
             <!-- Conteúdo -->
@@ -185,7 +229,7 @@
 
         <!-- Assunto 9 -->
         <li>
-            <strong>Outros Questionamentos e Sugestões</strong>
+            <strong class="topic">Outros Questionamentos e Sugestões</strong>
             <!-- Botão para expandir/collapse -->
             <button class="expandir" onclick="toggleConteudo(this)">Expandir</button>
             <!-- Conteúdo -->
@@ -208,7 +252,7 @@
         
     </ul>
     <br><br><br>
-    <button onclick="expandirTodos()">Expandir Todos</button> <button onclick="recolherTodos()">Recolher Todos</button>
+    <button class="botao-expandir" onclick="expandirTodos()">Expandir Todos</button> <button class="botao-recolher" onclick="recolherTodos()">Recolher Todos</button>
 
     <script>
         function toggleConteudo(botao) {
